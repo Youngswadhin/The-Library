@@ -1,0 +1,46 @@
+.Counter {
+    width: 90vw;
+    min-height: 220px;
+    max-width: 1100px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px #00000030;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+    background: #fff;
+    background: url(https://c4.wallpaperflare.com/wallpaper/707/220/899/gradient-blue-pink-abstract-art-wallpaper-preview.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    .Count {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+
+        span {
+            font-size: 33px;
+            line-height: 40px;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 22px;
+            font-weight: 400;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    // .Counter {
+    //     flex-direction: column;
+    //     gap: 60px;
+    // }
+}

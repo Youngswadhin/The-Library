@@ -1,0 +1,222 @@
+[
+  {
+    "branch": "EXTRA",
+    "semester": "",
+    "subject": "SPACE",
+
+    "id": 500001,
+    "author": "Natahan Harrington",
+    "name": "The Edge",
+    "keywords": "Natahan Harrington The Edge EXTRA SPACE",
+    "description": "by Natahan Harrington, About Space and Astronomy, McGraw Hills Education",
+    "star": 4,
+    "color": "2e4f5f",
+    "image": "https://static-cse.canva.com/blob/978712/1024w-bpueJw9ttIE.jpg",
+    "link": "",
+    "size": "13.43",
+    "pages": "435",
+
+    "preview": "",
+    "visits": "",
+    "like": "",
+    "download": ""
+  },
+  {
+    "branch": "CSE",
+    "semester": "4",
+    "subject": "DSA",
+
+    "id": 140001,
+    "author": "Thomas H Cormen",
+    "name": "Itrodruction To Algorthims",
+    "keywords": "Higher Engineering Mathematics by B.V.Raman McGraw Hills Education MATHEMATICS sem1 CSE",
+    "description": "by Thomas H Cormen,Third Edition, Mit Press",
+    "star": 3,
+    "color": "8bb5c6",
+    "image": "https://m.media-amazon.com/images/I/41VndKVtiXL.jpg",
+    "link": "",
+    "size": "25.1",
+    "pages": "753",
+
+    "preview": "",
+    "visits": "",
+    "like": "",
+    "download": ""
+  },
+  {
+    "branch": "CSE",
+    "semester": "1",
+    "subject": "AIML",
+
+    "id": 150002,
+    "author": "David Brown",
+    "name": "Artifitial Intelligence",
+    "keywords": "David Brown Artifitial Intelligence sem4 AIML CSE",
+    "description": "by David Brown, Artifitial Intelligence, McGraw Hills Education",
+    "star": 4,
+    "color": "14449a",
+    "image": "https://novapublishers.com/wp-content/uploads/2021/09/9781685073138-e1636134763122.jpg",
+    "link": "",
+    "size": "",
+    "pages": "",
+
+    "preview": "",
+    "visits": "",
+    "like": "",
+    "download": ""
+  },
+  {
+    "branch": "ME",
+    "semester": "3",
+    "subject": "MECHANICS",
+
+    "id": 430001,
+    "author": "Hemant Gupta",
+    "name": "Fluid Mechanics",
+    "keywords": "Fluid Mechanics Hemant Gupta sem3 ME",
+    "description": "by Hemant Gupta, sem3 fluid mechanics, McGraw Hills Education",
+    "star": 3,
+    "color": "0c5c8b",
+    "image": "https://images.saymedia-content.com/.image/t_share/MTc2NDU3OTExMjg2NzA0MDkw/btech-iii-semester-books.jpg",
+    "link": "",
+    "size": "",
+    "pages": "",
+
+    "preview": "",
+    "visits": "",
+    "like": "",
+    "download": ""
+  },
+  {
+    "branch": "ME",
+    "semester": "2",
+    "subject": "MECHANICS",
+
+    "id": 420002,
+    "author": "Dr. R.K. Bansal",
+    "name": "Engineering Mechanics",
+    "keywords": "Dr. R.K. Bansal Engineering Mechanics sem2 ME",
+    "description": "by B.V.Raman, Chapter 4.1,4.2, McGraw Hills Education",
+    "star": 4,
+    "color": "858274",
+    "image": "https://m.media-amazon.com/images/I/91+VFrIaPVL.jpg",
+    "link": "",
+    "size": "",
+    "pages": "",
+
+    "preview": "",
+    "visits": "",
+    "like": "",
+    "download": ""
+  },
+  {
+    "branch": "EE",
+    "semester": "4",
+    "subject": "ELECTRONICS",
+
+    "id": 240001,
+    "author": "M D Singh",
+    "name": "Power Electronics",
+    "keywords": "M D Singh Power Electronics sem4 EE ELECTRONICS",
+    "description": "by B.V.Raman, Chapter 4.1,4.2, McGraw Hills Education",
+    "star": 3,
+    "color": "90c8af",
+    "image": "https://m.media-amazon.com/images/I/61zMFA8zLUL.jpg",
+    "link": "",
+    "size": "",
+    "pages": "",
+
+    "preview": "",
+    "visits": "",
+    "like": "",
+    "download": ""
+  },
+  {
+    "branch": "EE",
+    "semester": "3",
+    "subject": "ELECTRICAL",
+
+    "id": 230002,
+    "author": "DP Kothari",
+    "name": "Electrical Mechanics",
+    "keywords": "DP Kothari Electrical Mechanics EE sem3",
+    "description": "by DP Kothari,Electrical Engineering, second Edition, McGraw Hills Education",
+    "star": 4,
+    "color": "565b5f",
+    "image": "https://www.ikbooks.com/uploads/BookImages/ikbooks-size200/9789385909757.jpg",
+    "link": "",
+    "size": "",
+    "pages": "",
+
+    "preview": "",
+    "visits": "",
+    "like": "",
+    "download": ""
+  },
+  {
+    "branch": "CE",
+    "semester": "2",
+    "subject": "CONSTRUCTION",
+
+    "id": 320001,
+    "author": "John Doy",
+    "name": "Basic Building Construnction",
+    "keywords": "Basic Building Construnction John Doy CE sem2 CONSTRUCTION",
+    "description": "by John Doy, Basic Building Construnction, McGraw Hills Education",
+    "star": 3,
+    "color": "586f41",
+    "image": "https://www.degruyter.com/document/cover/isbn/9783035603729/product_pages",
+    "link": "",
+    "size": "",
+    "pages": "",
+
+    "preview": "",
+    "visits": "",
+    "like": "",
+    "download": ""
+  },
+  {
+    "branch": "CE",
+    "semester": "4",
+    "subject": "DRAWING",
+
+    "id": 340002,
+    "author": "P.S Gill",
+    "name": "Engineering Drawing",
+    "keywords": "Engineering Drawing P.S Gill CE sem4 DRAWING",
+    "description": "by P.S Gill, second Edition, McGraw Hills Education",
+    "star": 4,
+    "color": "b2b89c",
+    "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1481471010l/33309860._SX318_.jpg",
+    "link": "",
+    "size": "",
+    "pages": "",
+
+    "preview": "",
+    "visits": "",
+    "like": "",
+    "download": ""
+  },
+  {
+    "branch": "CSE",
+    "semester": "1",
+    "subject": "MATHEMATICS",
+
+    "id": 110003,
+    "author": "B.V.Raman",
+    "name": "Higher Engineering Mathematics by B.V.Raman",
+    "keywords": "Higher Engineering Mathematics by B.V.Raman McGraw Hills Education MATHEMATICS sem1 CSE",
+    "description": "by B.V.Raman, Chapter 4.1,4.2, McGraw Hills Education",
+    "star": 3,
+    "color": "294351",
+    "image": "https://m.media-amazon.com/images/I/71YH4+LrpgL.jpg",
+    "link": "",
+    "size": "",
+    "pages": "",
+
+    "preview": "",
+    "visits": "",
+    "like": "",
+    "download": ""
+  }
+]

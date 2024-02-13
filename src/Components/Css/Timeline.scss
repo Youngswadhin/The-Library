@@ -1,0 +1,98 @@
+$timeline: (
+  color-dots: #8f86ff,
+  color-lines: rgba(161, 152, 152, 0.4),
+  color-text: #000,
+  color-background: #01579B,
+  dot-size: 15px,
+  dot-border-width: 3px,
+  line-width: 2.5px,
+  spacing-horizontal: 12px,
+  spacing-vertical: 24px
+);
+
+.m-timeline {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  color: map-get($timeline, 'color-text');
+    
+  li {
+    position: relative;
+    padding: (map-get($timeline, 'dot-border-width') + map-get($timeline, 'dot-size') / 5)  0 map-get($timeline, 'spacing-vertical') (map-get($timeline, 'dot-size') + map-get($timeline, 'spacing-horizontal'));
+    transition: all 100ms;
+    min-height: map-get($timeline, 'dot-size') + map-get($timeline, 'spacing-vertical');
+    
+    &::before,
+    &::after {
+      transition: all 100ms;
+    }
+    
+    &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: .45em;
+      left: 0;
+      transform: translateX(1px);
+      z-index: 2;
+      background-color: map-get($timeline, 'color-dots');
+      width: map-get($timeline, 'dot-size');
+      height: map-get($timeline, 'dot-size');
+      border-radius: 50%;
+      // border: map-get($timeline, 'dot-border-width') solid map-get($timeline, 'color-background');
+    }
+    
+    &::after {
+      content: '';
+      display: block;
+      width: map-get($timeline, 'line-width');
+      background-color: map-get($timeline, 'color-lines');
+      position: absolute;
+      top: 0;
+      left: map-get($timeline, 'dot-size') / 2;
+      height: 100%;
+      z-index: 1;      
+    }
+    
+    &:first-child::after {
+      top: map-get($timeline, 'dot-size') / 2;
+    }
+    
+    &:last-child::after {
+      height: map-get($timeline, 'dot-size') / 2;
+    }
+  }
+  
+  &__date {
+    font-size: .8em;
+    font-weight: 500;
+    margin: 0 0 .3em;
+    color: transparentize(map-get($timeline, 'color-text'), .7);
+  }
+  
+  p {
+    margin: 0 0 .5em 0;
+  }
+  
+  @media (min-width: 500px) {
+    li {
+      &:nth-child(odd) {
+        text-align: right;
+        padding-left: 0;
+        padding-right: calc(50% + #{(map-get($timeline, 'dot-size') / 2) + map-get($timeline, 'spacing-horizontal')});
+      }
+      
+      &:nth-child(even) {
+        padding-left: calc(50% + #{map-get($timeline, 'dot-size')});
+      }
+      
+      &::before {
+        left: calc(50% - #{map-get($timeline, 'dot-size') / 2});
+      }
+      
+      &::after {
+        left: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,282 @@
+.Home{
+    width: 95vw;
+    max-width: 1400px;
+    height: 85vh;
+    max-height: 800px;
+    background: #16191e;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    position: relative;
+    overflow: hidden;
+
+    .HomeContent{
+        color: #fff;
+        position: absolute;
+        z-index: 50;
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: #00000020;
+        filter: drop-shadow(0px 5px 10px #00000050);
+        text-align: center;
+        transition: .4s;
+        backdrop-filter: blur(7px);
+        
+        .heading{
+            font-size: 95px;
+            line-height: 90px;
+            font-weight: 900;
+        }
+        .Des{
+            margin-left: 15px;
+            font-size: 14px;
+            letter-spacing: 3.6px;
+            word-spacing: 6px;
+        }
+        .Des_min{
+            margin-left: 15px;
+            margin-top: 5px;
+            font-size: 12px;
+            letter-spacing: 2px;
+            word-spacing: 1px;
+        }
+    }
+    .hide{
+        opacity: 0;
+    }
+    .BackContent{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+    }
+    #book{
+        zoom: .85;
+        animation: fadein 1s ease-in-out 1;
+        transition: .4s;
+    }
+    @keyframes fadein {
+        0%{transform: translateY(100vh)}
+        100%{transform: translateY(0%)}
+    }
+}
+.CardContainer{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px 30px 10px;
+
+    .box {
+        max-width: 90vw;
+        min-height: 180px;
+        width: 350px;
+        border-radius: 5px;
+        box-shadow: 0px 30px 40px -20px hsl(229, 6%, 66%);
+        padding: 30px;
+        margin: 20px;  
+        flex-shrink: 0;
+        transition: .4s;
+        
+        &:hover{
+            transform: translateY(-20px);
+        }
+
+        p {
+            color: hsl(229, 6%, 66%);
+            margin-top: 10px;
+        }
+        h2 {
+            color: hsl(234, 12%, 34%);
+            font-weight: 600;
+            font-size: 25px;
+        }
+        img {
+            margin-right: 10px;
+        }
+    }
+    .cyan {
+        border-top: 3px solid hsl(180, 62%, 55%);
+    }
+    .red {
+        border-top: 3px solid hsl(0, 78%, 62%);
+    }
+    .blue {
+        border-top: 3px solid hsl(212, 86%, 64%);
+    }
+    .orange {
+        border-top: 3px solid hsl(34, 97%, 64%);
+    }
+}
+.Suggestion{
+    width: 700px;
+    max-width: 90vw;
+    min-height: 400px;
+    padding: 0px 30px 0px 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px #00000030;
+    overflow: hidden;
+    margin-top: 0px;
+    margin-bottom: 80px;
+    gap: 10px;
+
+    .heading{
+        font-size: 17px;
+        font-weight: 700;
+    }
+    .des{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .group{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        input{
+            width: 100%;
+            border: 2px solid #cbcbcb;
+            border-radius: 3px;
+            height: 35px;
+            padding-left: 7px;
+        }
+        textarea{
+            width: 100%;
+            border: 2px solid #cbcbcb;
+            border-radius: 5px;
+            resize: none;
+            max-height: 130px;
+            padding-left: 7px;
+            padding-top: 3px;
+        }
+    }
+    button{
+        width: 100%;
+        background: #4f46e5;
+        height: 38px;
+        border-radius: 6px;
+        color: #fff;
+        margin-top: 10px;
+    }
+}
+.ProfileCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.Footer{
+    width: 95%;
+    max-width: 1400px;
+    min-height: 200px;
+    border-radius: 20px 20px 0px 0px;
+    background: #16191e;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #fff;
+    gap: 30px;
+    padding: 20px;
+
+    .Name{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .heading{
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .des{
+            font-size: 14px;
+            letter-spacing: 3.6px;
+            word-spacing: 6px;
+        }
+    }
+    .SocialGrp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        flex-direction: column;
+        a{
+            color: #fff;
+            font-size: 13px;
+        }
+        .social_handel{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+    .text{
+        max-width: 345px;
+        text-align: center;
+    }
+}
+@media (max-width:900px) {
+    .Home{
+        max-height: 80vh;
+        .HomeContent{
+            backdrop-filter: blur(4px);
+        }
+        #book{
+            zoom: .7;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .Home{
+        #book{
+            zoom: .6;
+        }
+    }
+    .Suggestion{
+        .BackgroundSuggestion{
+            width: 170%;
+        }
+    }.Counter{
+        .Count{
+            span{
+                font-size: 30px;
+                line-height: 40px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .Footer{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 40px;
+        padding: 20px;
+    }
+    .Suggestion{
+        padding: 20px 30px 20px 30px;
+    }
+}

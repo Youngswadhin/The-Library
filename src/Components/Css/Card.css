@@ -1,0 +1,134 @@
+  .card-wrapper {
+    background-color: #343741;
+    height: 370px;
+    width: 280px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 0 0;
+    transform: scale(0.95);
+    transition: transform 0.5s, background-color 0.5s, box-shadow 0.5s;
+    position: relative;
+  }
+  
+  .card-wrapper:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  }
+  .card-wrapper:hover .card-footer-title{
+    opacity: 1;
+  }
+  .card-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card-header {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0
+  }
+  
+  .card-header img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+  }
+  
+  .card-wrapper:hover .card-header img {
+    transform: scale(1.2) rotate(3deg);
+  }
+  
+  .card-footer-title {
+    font-size: 24px;
+    color: #FFF;
+    font-weight: 500;
+    position: absolute;
+    opacity: 0;
+    bottom: 10px;
+    left: 17px;
+    transition: .7s;
+  }
+
+  .card-footer-title-des{
+    font-size: 14px;
+    color: #FFFFFF80;
+    font-weight: 500;
+  }
+  
+  .card-hover-content-container {
+    background-color: #1d1e24;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    border-radius: 0px 0px 100px 100px;
+    transition: all 0.2s, border-radius 1s, top 1s;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    opacity: 0.7;
+  }
+  
+  .card-hover-content-container:hover {
+    border-radius: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  }
+  
+  .card-menu-icon {
+    position: absolute;
+    right: 80px;
+    top: 85px;
+    color: white;
+    opacity: 1;
+    font-size: 20px;
+  }
+  
+  .card-hover-content-container:hover .card-menu-icon {
+    opacity: 0;
+    right: 15px;
+    top: 15px;
+  }
+  
+  .card-hover-content-container:hover .card-hover-content {
+    opacity: 1;
+    transform: scale(1);
+    transform: translateY(0);
+  }
+  
+  .card-hover-content {
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+    opacity: 0;
+    transform: scale(0.5);
+    transform: translateY(-50%);
+    transition: opacity 0.2s, transform 0.8s;
+    margin-bottom: 30px;
+  }
+  
+  .card-hover-content a {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    background-color: #7c7d83;
+    margin: 5px;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-hover-content a:hover {
+    transform: scale(1.2);
+  }

@@ -1,0 +1,87 @@
+create database Company
+
+create table Employee (FNAME varchar(30),MNIT varchar(1), LNAME varchar(30), SSN int,BDATE date, ADDRESS varchar(50), SEX varchar(1),SALARY int, SUPERSSN int, DNO int);
+
+insert into Employee values ('Franklin','T','Wong',333445555,19951206,'638 Vose, Houshon, TX','M',40000,888666555,5),
+                            ('Alicia','J','Zeaya',998887777,19660719,'3321 Castle, Sorting, TX','F',25000,987654321,4),
+                            ('Jennifer','S','Walace',987654321,19410520,'291 Borry, Belora, TX','F',43000,888666555,4),
+                            ('Ramesh','K','Narayan',888884444,19520915,'975 Fina Ouda, Humete, TX','M',38000,333444555,5),
+                            ('Joyce','A','English',453453453,19720731,'5831 Pice, Houshon, TX','F',25000,333444555,5),
+                            ('Ahmad','V','Jabbar',987987987,19690329,'960 Oulas, Houshon, TX','M',25000,987664321,2),
+                            ('Joman','E','Borg',888666555,19371110,'450 Slone, Houshon, TX','M',50000,null,1);
+
+
+create table Department (DNAME varchar(30), DNUMBER int, MGRSSN int,MGRSTARTDATE date);
+
+insert into Department values ('Reserch',5,33344555,19880522),
+                              ('Adminstration',4,98765432,19950101),
+                              ('Headquaters',1,888666555,19610619);
+
+
+show tables;
++-------------------+
+| Tables_in_company |
++-------------------+
+| department        |
+| employee          |
++-------------------+
+
+select * from Employee;
++----------+-------+---------+-----------+------------+---------------------------+------+--------+-----------+------+
+| FName    | Minit | LName   | SSN       | Bdate      | Adress                    | sex  | salary | superssn  | dno  |
++----------+-------+---------+-----------+------------+---------------------------+------+--------+-----------+------+
+| John     | B     | Smith   | 123456789 | 1955-01-09 | 731 Fordrann,Houshon Tx   | M    |  30000 | 333445555 |    5 |
+| Franklin | T     | Wong    | 333445555 | 1995-12-06 | 638 Vose, Houshon, TX     | M    |  40000 | 888666555 |    5 |
+| Alicia   | J     | Zeaya   | 998887777 | 1966-07-19 | 3321 Castle, Sorting, TX  | F    |  25000 | 987654321 |    4 |
+| Jennifer | S     | Walace  | 987654321 | 1941-05-20 | 291 Borry, Belora, TX     | F    |  43000 | 888666555 |    4 |
+| Ramesh   | K     | Narayan | 888884444 | 1952-09-15 | 975 Fina Ouda, Humete, TX | M    |  38000 | 333444555 |    5 |
+| Joyce    | A     | English | 453453453 | 1972-07-31 | 5831 Pice, Houshon, TX    | F    |  25000 | 333444555 |    5 |
+| Ahmad    | V     | Jabbar  | 987987987 | 1969-03-29 | 960 Oulas, Houshon, TX    | M    |  25000 | 987664321 |    2 |
+| Joman    | E     | Borg    | 888666555 | 1937-11-10 | 450 Slone, Houshon, TX    | M    |  50000 |      NULL |    1 |
++----------+-------+---------+-----------+------------+---------------------------+------+--------+-----------+------+
+
+select * from Department;
++---------------+---------+-----------+--------------+
+| DNAME         | DNUMBER | MGRSSN    | MGRSTARTDATE |
++---------------+---------+-----------+--------------+  
+| Reserch       |       5 |  33344555 | 1988-05-22   |
+| Adminstration |       4 |  98765432 | 1995-01-01   |
+| Headquaters   |       1 | 888666555 | 1961-06-19   |
++---------------+---------+-----------+--------------+
+
+
+
+21.02.2023
+
+CEATE DATABASE EXPFOUR;
+USE EXPFOUR;
+CREATE TABLE DEPT (DEPTNO INT,DNAME VARCHAR(10),LOC VARCHAR(4),PRIMARY KEY(DEPTNO));
+ALTER TABLE DEPT RENAME TO DEPARTMENT;
+ALTER TABLE DEPARTMENT ADD(PINCODE INT NOT NULL);
+DESC DEPARTMENT;
+ALTER TABLE DEPARTMENT DROP COLUMN LOC CASCADE CONSTRAINT;
+ALTER TABLE DEPARTMENT DROP COLUMN LOC;
+ALTER TABLE DEPARTMENT RENAME COLUMN DNAME TO DEPT_NAME;
+ALTER TABLE DEPARTMENT ADD(LOC VARCHAR(4));
+ALTER TABLE DEPARTMENT MODIFY COLUMN LOC VARCHAR(10);
+DROP TABLE DEPARTMENT;
+
+CREATE DATABASE EXPFIVEA;
+USE ESPFIVEA;
+CREATE TABLE EMPLOYEE (EMPNO VARCHAR(4),EMP_NAME VARCHAR(20),DEPT VARCHAR(30),SALARY INT,DOJ DATE, BRANCH VARCHAR(30));
+INSERT INTO EMPLOYEE VALUES ('E101','AMIT','PRODUCTION',45000,20000312,'BANGLORE'),
+                            ('E102','AMIT','HR',70000,20020703,'BANGLORE'),
+                            ('E103','SUNITA','MANAGING',120000,20010111,'MYSORE'),
+                            ('E104','SUNITA','IT',67000,20010801,'MYSORE'),
+                            ('E105','MAHESH','CIVIL',145000,20030920,'MUMBAI');
+DESC EMPLOYEE;
+SELECT * FROM EMPLOYEE;
+SELECT EMPNO,SALARY FROM EMPLOYEE;
+SELECT AVG(SALARY) FROM EMPLOYEE;
+SELECT COUNT(EMPNO) FROM EMPLOYEE;
+SELECT DISTINCT EMP_NAME FROM EMPLOYEE;
+SELECT SUM(SALARY) FROM EMPLOYEE GROUP BY EMP_NAME;
+SELECT COUNT(EMPNO) FROM EMPLOYEE GROUP BY EMP_NAME;
+SELECT SUM(SALARY) FROM EMPLOYEE WHERE SALARY > 120000;
+SELECT EMP_NAME DESC FROM EMPLOYEE;
+SELECT * FROM EMPLOYEE WHERE EMP_NAME = 'AMIT' AND SALARY > 50000;

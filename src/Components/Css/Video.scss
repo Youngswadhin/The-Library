@@ -1,0 +1,33 @@
+.VideoFrame{
+    .Display{
+        width: 95vw;
+        max-width: 300px;
+        height: 180px;
+        iframe{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        .Loading{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .Hide{
+            display: none;
+        }
+    }
+    .title{
+        margin-top: 10px;
+        font-size: 21px;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+    .author{
+        font-size: 14px;
+        color: gray;
+        
+    }
+}
