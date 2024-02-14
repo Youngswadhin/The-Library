@@ -13,7 +13,7 @@
     "firebase": "^9.17.2",
     "node-sass": "^8.0.0",
     "react": "^18.2.0",
-    "react-animated-text-content": "^1.0.2",
+    "react-animated-text-content": "^1.0.0",
     "react-countup": "^6.4.1",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.4.1",
